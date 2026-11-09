@@ -1,14 +1,15 @@
 import { useState } from "react";
 
-export function Box()
-{
-    const number1 = useState()
+export function Box() {
+    const [message, setMessage] = useState("valts messaget");
 
-    return(
+    function valt() {
+        setMessage("clicked");
+    }
+    return (
         <div>
-            <button onClick={}></button>
-            <h1></h1>
+            <button onClick={valt}>GOMB 1</button>
+            allapot: {number1}
         </div>
-    )
-    
+    );
 }
